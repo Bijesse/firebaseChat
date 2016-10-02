@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ScriptEd Firechat</title>
+  </head>
+  <body>
+    <div>
+      <ul id="messages"></ul>
+      <form id="message-form">
+        <input type="text" id="message">
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAIcxCmr6OPUgFk1j4yVjjNvOBPR6d3nH8",
+        authDomain: "scripted-forum.firebaseapp.com",
+        databaseURL: "https://scripted-forum.firebaseio.com",
+        storageBucket: "scripted-forum.appspot.com",
+        messagingSenderId: "291064252623"
+      };
+      firebase.initializeApp(config);
+      </script>
+      <script src="main.js"></script>
+  </body>
+</html>
